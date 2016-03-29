@@ -1,0 +1,16 @@
+{
+  "name": "steamy-mountain",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mattiaerre/steamy-mountain",
+  "authors": [
+    "mattia richetto <mattia.richetto@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
