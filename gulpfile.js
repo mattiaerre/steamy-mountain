@@ -1,14 +1,9 @@
-var gulp = require('gulp');
-var LiveSerer = require('gulp-live-server');
-var browserSync = require('browser-sync');
 var browserify = require('browserify');
+var browserSync = require('browser-sync');
+var gulp = require('gulp');
+var LiveServer = require('gulp-live-server');
 var reactify = require('reactify');
 var source = require('vinyl-source-stream');
-
-gulp.task('live-server', function() {
-  var server = new LiveSerer('bin/www');
-  server.start();
-});
 
 gulp.task('bundle', function() {
   return browserify({
@@ -21,10 +16,14 @@ gulp.task('bundle', function() {
     .pipe(gulp.dest('./.tmp'));
 });
 
-gulp.task('serve', ['live-server'], function() {
+gulp.task('live-server', function() {
+  var server = new LiveServer('bin/www');
+  server.start();
+});
+
+gulp.task('serve', ['bundle', 'live-server'], function() {
   browserSync.init(null, {
     proxy: 'http://localhost:7777',
     port: 9001
   });
 });
-
