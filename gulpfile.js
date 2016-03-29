@@ -5,6 +5,8 @@ var LiveServer = require('gulp-live-server');
 var reactify = require('reactify');
 var source = require('vinyl-source-stream');
 
+require('dotenv').config();
+
 gulp.task('bundle', function() {
   return browserify({
     entries: 'public/app/main.jsx',
@@ -22,8 +24,9 @@ gulp.task('live-server', function() {
 });
 
 gulp.task('serve', ['bundle', 'live-server'], function() {
+  var port = process.env.PORT || '3000';
   browserSync.init(null, {
-    proxy: 'http://localhost:7777',
-    port: 9001
+    proxy: 'http://localhost:' + port,
+    port: 9090
   });
 });
