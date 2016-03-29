@@ -11,7 +11,7 @@ module.exports = React.createClass({
           {
             model.map(function(item, index) {
               return (
-                <RestaurantItem data={item} />
+                <RestaurantItem data={item} key={item.id} />
               )
             })
           }
