@@ -1,6 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var RestaurantInfoWidget = require('./components/RestaurantInfoWidget.jsx');
+var RestaurantList = require('./components/RestaurantList.jsx');
 
-ReactDOM.render(<RestaurantInfoWidget />, container);
+var data = [
+  require('../data/foreign-cinema.json'),
+  require('../data/hakkasan-san-francisco.json'),
+  require('../data/waterbar.json')
+];
+
+ReactDOM.render(<RestaurantList data={data} />, container);

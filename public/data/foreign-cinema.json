@@ -1,0 +1,17 @@
+{
+  "id": 1906,
+  "name": "Foreign Cinema",
+  "address": "2534 Mission St.",
+  "city": "San Francisco",
+  "state": "CA",
+  "area": "San Francisco Bay Area",
+  "postal_code": "94110",
+  "country": "US",
+  "phone": "4156487600",
+  "lat": 37.756301,
+  "lng": -122.418858,
+  "price": 2,
+  "reserve_url": "http://www.opentable.com/single.aspx?rid=1906",
+  "mobile_reserve_url": "http://mobile.opentable.com/opentable/?restId=1906",
+  "image_url": "https://www.opentable.com/img/restimages/1906.jpg"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 17035,
+  "name": "Waterbar",
+  "address": "399 The Embarcadero South",
+  "city": "San Francisco",
+  "state": "CA",
+  "area": "San Francisco Bay Area",
+  "postal_code": "94105",
+  "country": "US",
+  "phone": "4152849922",
+  "lat": 37.790441,
+  "lng": -122.388983,
+  "price": 3,
+  "reserve_url": "http://www.opentable.com/single.aspx?rid=17035",
+  "mobile_reserve_url": "http://mobile.opentable.com/opentable/?restId=17035",
+  "image_url": "https://www.opentable.com/img/restimages/17035.jpg"
+}

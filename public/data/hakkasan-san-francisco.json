@@ -1,0 +1,17 @@
+{
+  "id": 95704,
+  "name": "Hakkasan San Francisco",
+  "address": "One Kearny Street",
+  "city": "San Francisco",
+  "state": "CA",
+  "area": "San Francisco Bay Area",
+  "postal_code": "94108",
+  "country": "US",
+  "phone": "4158298148x",
+  "lat": 37.787821,
+  "lng": -122.403558,
+  "price": 4,
+  "reserve_url": "http://www.opentable.com/single.aspx?rid=95704",
+  "mobile_reserve_url": "http://mobile.opentable.com/opentable/?restId=95704",
+  "image_url": "https://www.opentable.com/img/restimages/95704.jpg"
+}
