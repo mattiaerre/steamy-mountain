@@ -6,6 +6,18 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var restaurants = require('./routes/v0/restaurants');
+
+// database
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/steamy-mountain');
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log('database connected');
+});
+// /database
 
 var app = express();
 
@@ -23,6 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, '.tmp')));
 
 app.use('/', routes);
+app.use('/v0/restaurants', restaurants);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

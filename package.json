@@ -24,6 +24,7 @@
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
     "reactify": "^1.1.1",
+    "reqwest": "^2.0.5",
     "serve-favicon": "~2.3.0",
     "vinyl-source-stream": "^1.1.0"
   },

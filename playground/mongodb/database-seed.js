@@ -27,6 +27,8 @@ function seed() {
     return console.log('collection removed')
   });
 
+  save(new Restaurant(require('../../data/107257.json')));
+  save(new Restaurant(require('../../data/34252.json')));
   save(new Restaurant(require('../../data/foreign-cinema.json')));
   save(new Restaurant(require('../../data/hakkasan-san-francisco.json')));
   save(new Restaurant(require('../../data/waterbar.json')));
