@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 var RestaurantList = require('./components/RestaurantList.jsx');
+var Counter = require('./components/Counter.jsx');
 
 var data = [
   require('../data/foreign-cinema.json'),
@@ -9,4 +10,6 @@ var data = [
   require('../data/waterbar.json')
 ];
 
-ReactDOM.render(<RestaurantList data={data} />, container);
+//ReactDOM.render(<RestaurantList data={data} />, container);
+
+ReactDOM.render(<Counter />, container);
